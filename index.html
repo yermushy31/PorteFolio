@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="getRSSFeed();getGithubRepos();">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Hector Caillebotte</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="display-4">Welcome to My Portfolio</h1>
+      <p class="lead">I showcase my work here</p>
+    </div>
+  </header>
+
+    <!-- About Section -->
+    <section id="aboutme">
+        <section class="about-me">
+            <div class="container">
+              <img src="image/photo.png" alt="Profile Picture">
+              <h2>About Me</h2>
+              <p>Enthusiastic and committed in the fields of cybersecurity and development, I am constantly seeking new knowledge, ready to tackle the technical challenges that come my way.</p>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/hector-caillebotte-vince/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yermushy31"><i class="fab fa-github"></i></a>
+                <a href="mailto:hector.caillebottevince@limayrac.fr"><i class="fab fa-google"></i></a>
+              </div>
+            </div>
+          </section>
+    </section>
+
+    <!-- Timeline Section -->
+  <div class="main-timeline">
+
+    <!-- start experience section-->
+    <h2 class="text-center">My Experiences</h2>
+    <br><br>
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="date-content">
+            <div class="date-outer">
+                <span class="date">
+                        <span class="month">June - February</span>
+                <span class="year">2024</span>
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">EVIDEN with the HPC team of Météo France in Web Devellopement</h5>
+            <p class="description">
+                Development of a project-based configuration interface
+            </p>
+        </div>
+    </div>
+    <!-- end experience section-->
+
+    <!-- start experience section-->
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="date-content">
+            <div class="date-outer">
+                <span class="date">
+                        <span class="month">May - June</span>
+                <span class="year">2023</span>
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">Themanis in web devellopement</h5>
+            <p class="description">
+                Development of a web application as a project. The application is an interface for a reception room.   
+            </p>
+        </div>
+    </div>
+    <!-- end experience section-->
+
+    <!-- start experience section-->
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="date-content">
+            <div class="date-outer">
+                <span class="date">
+                        <span class="month">November - February</span>
+                <span class="year">2021 - 2022</span>
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">ATOS Network Management</h5>
+            <p class="description">
+                Deployment of web services on Linux, Configuration of network equipment (switches, routers). 
+            </p>
+        </div>
+    </div>
+    <!-- end experience section-->
+
+    <!-- start experience section-->
+    <div class="timeline">
+        <div class="icon"></div>
+        <div class="date-content">
+            <div class="date-outer">
+                <span class="date">
+                        <span class="month">December</span>
+                <span class="year">2020</span>
+                </span>
+            </div>
+        </div>
+        <div class="timeline-content">
+            <h5 class="title">Themanis (training center in Portet sur Garonne)</h5>
+            <p class="description">
+                Deployment of Windows images, preparation of training rooms, repair of laptops.
+            </p>
+        </div>
+    </div>
+    <!-- end experience section-->
+
+</div>
+
+<!-- Portfolio Section -->
+
+<section id="portfolio" class="py-5">
+    <div class="container">
+        <h2 class="text-center">My Projects</h2>
+            <!-- Portfolio Item 1 -->
+        <div id="repos" class="row"></div>       
+    </div>
+</section>
+
+<!-- Technologies Section -->
+<section id="technologies" class="py-5">
+      <div class="container">
+      <h2 class="text-center">Technology Watch</h1>
+ 
+    <div id="articles" class="row"></div>
+
+    </div>
+</section>
+
+  <!-- Competences Table -->
+
+<section id="competences" class="py-5">
+    <div class="container">
+      <h2 class="text-center">My Skills</h2>
+      <div id="tableComp" class="row"></div>
+    </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-dark text-white py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form action="#">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 My Portfolio</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="js/techno.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
