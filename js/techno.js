@@ -3,6 +3,32 @@
 // Thème : cyber sécurité
 // URL : https://medium.com/feed/topic/cyber-security
 
+function createSkillsCard() {
+    var skills = [
+        "Gérer le patrimoine informatique",
+        "Répondre aux incidents et aux demandes d’assistance et d’évolution",
+        "Développer la présence en ligne de l'entreprise",
+        "Travailler en mode projet",
+        "Mettre à disposition des utilisateurs un service informatique",
+        "Organiser son développement personnel"
+    ];
+
+    var skillsContainer = document.getElementById('skills');
+ // for each skill, create a card using the functions below
+    skills.forEach(skill => {
+        const div = createCardDiv();
+        const cardBody = createCardBody();
+        const title = createCardTitle(skill);
+        appendElements(cardBody, [title]);
+        appendElements(div, [cardBody]);
+        skillsContainer.appendChild(div);
+
+
+    });
+
+}
+
+
 async function getRSSFeed() {
     if (document.getElementById('articles')) {
         var url = "https://medium.com/feed/tag/cyber-security";
