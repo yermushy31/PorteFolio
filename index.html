@@ -1,0 +1,355 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>My Portfolio</title><!-- Bootstrap CSS --><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!-- Font Awesome CSS --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Lightbox2 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>  
+
+
+<body onload="getRSSFeed();getGithubRepos();">
+
+  
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Hector Caillebotte</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="display-4">Welcome to My Portfolio</h1>
+      <p class="lead">I showcase my work here</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="aboutme">
+    <section class="about-me">
+      <div class="container">
+        <img src="image/photo.png" alt="Profile Picture">
+        <h2>About Me</h2>
+        <p>Enthusiastic and committed in the fields of cybersecurity and development, I am constantly seeking new
+          knowledge, ready to tackle the technical challenges that come my way.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/hector-caillebotte-vince/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/yermushy31"><i class="fab fa-github"></i></a>
+          <a href="mailto:hector.caillebottevince@limayrac.fr"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Timeline Section -->
+  <div class="main-timeline">
+
+    <!-- start experience section-->
+    <h2 class="text-center">My Experiences</h2>
+    <br><br>
+    <div class="timeline">
+      <div class="icon"></div>
+      <div class="date-content">
+        <div class="date-outer">
+          <span class="date">
+            <span class="month">June - February</span>
+            <span class="year">2024</span>
+          </span>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h5 class="title">EVIDEN with the HPC team of Météo France in Web Devellopement</h5>
+        <p class="description">
+          Development of a project-based configuration interface
+        </p>
+      </div>
+    </div>
+    <!-- end experience section-->
+
+    <!-- start experience section-->
+    <div class="timeline">
+      <div class="icon"></div>
+      <div class="date-content">
+        <div class="date-outer">
+          <span class="date">
+            <span class="month">May - June</span>
+            <span class="year">2023</span>
+          </span>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h5 class="title">Themanis in web devellopement</h5>
+        <p class="description">
+          Development of a web application as a project. The application is an interface for a reception room.
+        </p>
+      </div>
+    </div>
+    <!-- end experience section-->
+
+    <!-- start experience section-->
+    <div class="timeline">
+      <div class="icon"></div>
+      <div class="date-content">
+        <div class="date-outer">
+          <span class="date">
+            <span class="month">November - February</span>
+            <span class="year">2021 - 2022</span>
+          </span>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h5 class="title">ATOS Network Management</h5>
+        <p class="description">
+          Deployment of web services on Linux, Configuration of network equipment (switches, routers).
+        </p>
+      </div>
+    </div>
+    <!-- end experience section-->
+
+    <!-- start experience section-->
+    <div class="timeline">
+      <div class="icon"></div>
+      <div class="date-content">
+        <div class="date-outer">
+          <span class="date">
+            <span class="month">December</span>
+            <span class="year">2020</span>
+          </span>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h5 class="title">Themanis (training center in Portet sur Garonne)</h5>
+        <p class="description">
+          Deployment of Windows images, preparation of training rooms, repair of laptops.
+        </p>
+      </div>
+    </div>
+    <!-- end experience section-->
+
+  </div>
+
+  <!-- Portfolio Section -->
+
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-white">My Projects</h2>
+      <!-- Portfolio Item 1 -->
+      <div id="repos" class="row"></div>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section id="technologies" class="py-5">
+    <!-- Summary Of technological veil on cybersecurity -->
+
+    <h2 class="text-center text-white">Cybersecurity Nowadays :</h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center">
+              <div class="col-md-12">
+                <h3>Summary</h3>
+                <p>Today, cybersecurity is a major issue for companies. The threats are numerous and the consequences
+                  can
+                  be disastrous. It is therefore essential to protect your data and your information systems. To do
+                  this,
+                  it is necessary to implement security measures and to be aware of the risks. This article presents the
+                  main threats and the best practices to adopt to protect yourself from cyber attacks.</p>
+              </div>
+              <div class="col-md-12">
+                <h3>Technological Veil</h3>
+                <p>Technological Veil is a blog that deals with cybersecurity issues. It offers articles on the latest
+                  threats, the best practices to adopt and the tools to use to protect yourself. The blog also offers
+                  tutorials on how to secure your data and your information systems. It is a valuable resource for
+                  anyone
+                  who
+                  wants to learn more about cybersecurity and how to protect themselves from cyber attacks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="text-center text-white">Technology Watch From Medium.com</h1>
+
+          <div id="articles" class="row"></div>
+
+      </div>
+  </section>
+
+  <a href="img/AP2.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/AP2_.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/AP2_2.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/AP2_3.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/AP2_4.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/AP2_5.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/AP2_6.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/AP2_7.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/BDD.jpg" data-lightbox="RESTOWEB"></a>
+  <a href="img/BDD_create.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/BDD_create1.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/BDD_create2.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/BDD_create3.PNG" data-lightbox="RESTOWEB"></a>
+  <a href="img/BDD_create4.PNG" data-lightbox="RESTOWEB"></a>
+  
+  <a href="img/AP2_JAVA.PNG" data-lightbox="RESTOJAVA"></a>
+  <a href="img/AP2_JAVA_2.PNG" data-lightbox="RESTOJAVA"></a>
+  <a href="img/AP2_JAVA_3.PNG" data-lightbox="RESTOJAVA"></a>
+  <a href="img/AP2_JAVA_4.PNG" data-lightbox="RESTOJAVA"></a>
+
+  <a href="img/THEMANIS1.JPG" data-lightbox="THEMANIS"></a>
+  <a href="img/THEMANIS2.JPG" data-lightbox="THEMANIS"></a>
+  <a href="img/THEMANIS3.JPG" data-lightbox="THEMANIS"></a>
+  <a href="img/THEMANIS3.JPG" data-lightbox="THEMANIS"></a>
+
+  <a href="img/Home.png" data-lightbox="EVIDEN"></a>
+  <a href="img/Events.png" data-lightbox="EVIDEN"></a>
+  <a href="img/Users.png" data-lightbox="EVIDEN"></a>
+  <a href="img/EquipmentsConf1.png" data-lightbox="EVIDEN"></a>
+  <a href="img/EquipmentsConf2.png" data-lightbox="EVIDEN"></a>
+
+
+
+  <table class="table table-bordered table-striped table-responsive">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Gérer le patrimoine informatique</th>
+        <th scope="col">Répondre aux incidents et aux demandes d’assistance et d’évolution</th>
+        <th scope="col">Développer la présence en ligne de l’organisation</th>
+        <th scope="col">Travailler en mode projet</th>
+        <th scope="col">Mettre à disposition des utilisateurs un service informatique</th>
+        <th scope="col">Organiser son développement professionnel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th colspan="7" class="text-center bg-light" scope="row">Exemple de réalisation au cours de mon BTS <em style="color: grey; font-size: smaller">2022 - 2024</em></th>
+      </tr>
+      <tr>
+        <th class="l" scope="row">Linkedin <br> &ensp;</th>
+        <td class="w-25"></td>
+        <td class="w-25"></td>
+        <td class="w-25"></td>
+        <td class="w-25"></td>
+        <td class="w-25"></td>
+        <td class="w-25 text-center align-middle btn_tab_synthese"><a href="https://www.linkedin.com/in/hector-caillebotte-vince/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></td>
+      </tr>
+      <tr>
+        <th scope="row">Création du PortFolio</th>
+        <td class="w-25"></td>
+        <td class="w-25"></td>
+        <td class="w-25"></td>
+        <td class="w-25"></td>
+        <td class="w-25"></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle"><a href="https://github.com/LBouzac/PortFolio" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></td>
+      </tr>
+      <tr>
+        <th scope="row">Projet RestoWeb<br> &ensp;</th>
+        <td class="w-25"></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle"><a href="img/AP2.PNG" data-lightbox="RESTOWEB">
+          <i class="fas fa-image fa-2xl" aria-hidden="true"></i></a></td>
+        <td class="w-25"></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle"><a href="img/AP2.PNG" data-lightbox="RESTOWEB">
+          <i class="fas fa-image fa-2xl" aria-hidden="true"></i></a></td>
+        <td class="w-25"></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle">
+          <a href="https://github.com/LoutrePasSauvage/B2SLAM-AppRestoWeb" target="_blank">
+            <i class="fab fa-github" aria-hidden="true"></i></a>
+          </td>
+  
+      </tr>
+      <tr>
+        <th scope="row">Projet RestoJava</th>
+        <td class="w-25"></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle"><a href="img/AP2_JAVA.PNG" data-lightbox="RESTOJAVA" data-title="AP2 Java"><i class="fas fa-image fa-2xl" aria-hidden="true"></i></a></td>
+        <td class="w-25"></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle"><a href="img/AP2_JAVA.PNG" data-lightbox="RESTOJAVA" data-title="AP2 Java"><i class="fas fa-image fa-2xl" aria-hidden="true"></i></a></td>
+        <td class="w-25"></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle"><a href="https://github.com/LoutrePasSauvage/B2SLAM-AppRestoSwing" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></td>
+      </tr>
+      <tr>
+        <th scope="row">Dévellopement application pour salle d'attente chez Themanis</th>
+        <td class="w-25"></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle">
+          <a href="img/THEMANIS1.JPG" data-lightbox="THEMANIS"><i class="fas fa-image fa-2xl" aria-hidden="true"></i></a>
+        </td>
+        <td class="w-25"></td>
+        <td class="w-25"></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle">
+          <a href="img/THEMANIS1.JPG" data-lightbox="THEMANIS"><i class="fas fa-image fa-2xl" aria-hidden="true"></i></a>
+        </td>
+        <td class="w-25 btn_tab_synthese text-center align-middle"><a href="https://github.com/yermushy31/WebTV" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></td>
+      </tr>
+      <tr>
+        <th scope="row">Dévellopement d'une page de configuration pour l'équipe HPC de Météo France</th>
+        <td class="w-25"></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle"><a href="img/Home.png" data-lightbox="EVIDEN" data-title="Alternance BTS SIO"><i class="fas fa-image fa-2xl" aria-hidden="true"></i></a></td>
+        <td class="w-25"></td>
+        <td class="w-25"></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle"><a href="img/Home.png" data-lightbox="EVIDEN" data-title="Alternance BTS SIO"><i class="fas fa-image fa-2xl" aria-hidden="true"></i></a></td>
+        <td class="w-25 btn_tab_synthese text-center align-middle"><a href="https://github.com/yermushy31/clary-web" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></td>
+      </tr>
+    </tbody>
+  </table>
+   <br>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 My Portfolio</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and jQuery -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const cells = document.querySelectorAll(".btn_tab_synthese");
+      cells.forEach(cell => {
+        cell.addEventListener("click", function() {
+          const imageLink = this.querySelector("a"); 
+          const lightboxContent = document.createElement("div"); 
+          lightboxContent.classList.add("carousel-container"); 
+          const lightbox = document.querySelector("[data-lightbox]"); 
+          lightbox.innerHTML = lightboxContent.outerHTML;
+        });
+      });
+    });
+  </script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <!-- Lightbox2 JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+   <!-- Custom JS -->
+   <script src="js/techno.js"></script>
+</body>
+</html>
