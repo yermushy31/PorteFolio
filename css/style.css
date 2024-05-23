@@ -472,3 +472,13 @@ img {
   .table .fa-image {
     cursor: pointer;
   }
+
+  .carousel-item {
+      height: 400px; /* Fixed height for the carousel */
+    }
+    .carousel-item img {
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain; /* Ensure images fit within the container */
+    }
